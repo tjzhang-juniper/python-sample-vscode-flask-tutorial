@@ -28,6 +28,8 @@ steps:
 - task: SSH@0
   inputs:
     sshEndpoint: SSH Service Connection
+    runOptions: commands
+    commands: 'ls'
 - script: |
     python -m pip install --upgrade pip
     pip install -r requirements.txt

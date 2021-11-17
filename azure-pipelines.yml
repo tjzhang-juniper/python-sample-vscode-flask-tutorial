@@ -13,7 +13,8 @@ steps:
 
 
 - script: |
-    source /home/crystalnet/wan-sonic-automation/v-wan-test/bin/active
+    cd /home/crystalnet/wan-sonic-automation
+    source v-swan-test/bin/active
     export TEST_MODE=1
     python sonic_test.py
 - script: |

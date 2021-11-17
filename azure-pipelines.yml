@@ -11,16 +11,12 @@ pool:
 
 steps:
 
-- task: SSH@0
-  inputs:
-    sshEndpoint: SSH Service Connection
-    runOptions: commands
-    commands: 'ls'
+
 - script: |
-    cd /home/crystalnet/wan-sonic-automation
-    source v-wan-test/bin/active
-    export TEST_MODE=1
-    python sonic_test.py
+    'cd /home/crystalnet/wan-sonic-automation'
+    'source v-wan-test/bin/active'
+    'export TEST_MODE=1'
+    'python sonic_test.py'
 - script: |
     python -m pip install --upgrade pip
     pip install -r requirements.txt

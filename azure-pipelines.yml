@@ -14,7 +14,7 @@ steps:
 - task: SSH@0
   inputs:
    sshEndpoint: 
-  ssh
+   
 - script: |
     cd /home/crystalnet/wan-sonic-automation
     source v-swan-test/bin/activate

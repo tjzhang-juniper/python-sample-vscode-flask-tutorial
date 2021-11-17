@@ -13,7 +13,8 @@ steps:
 
 - task: SSH@0
   inputs:
-   sshEndpoint: 
+   sshEndpoint: SSH Service Connection
+   commands: ls
    
 - script: |
     cd /home/crystalnet/wan-sonic-automation

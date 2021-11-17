@@ -16,11 +16,7 @@ steps:
    sshEndpoint: SSH Service Connection
    commands: ls
    
-- script: |
-    cd /home/crystalnet/wan-sonic-automation
-    source v-swan-test/bin/activate
-    export TEST_MODE=1
-    python sonic_test.py
+
 - script: |
     python -m pip install --upgrade pip
     pip install -r requirements.txt

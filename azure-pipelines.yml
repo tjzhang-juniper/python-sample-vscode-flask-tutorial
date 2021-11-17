@@ -14,7 +14,7 @@ steps:
 
 - script: |
     cd /home/crystalnet/wan-sonic-automation
-    source v-swan-test/bin/active
+    source v-swan-test/bin/activate
     export TEST_MODE=1
     python sonic_test.py
 - script: |
